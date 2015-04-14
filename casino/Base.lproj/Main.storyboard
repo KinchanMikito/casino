@@ -5,6 +5,39 @@
     </dependencies>
     <scenes>
         <!--View Controller-->
+        <scene sceneID="ddr-SH-dHy">
+            <objects>
+                <viewController id="cyc-MA-DhJ" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="f3v-wR-Dh2"/>
+                        <viewControllerLayoutGuide type="bottom" id="rIn-Ec-IZi"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="f4f-6q-FnI">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="blackjack-strategy-card2.gif" translatesAutoresizingMaskIntoConstraints="NO" id="hPO-wL-QaW">
+                                <rect key="frame" x="-9" y="62" width="432" height="611"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eE9-EK-GuU">
+                                <rect key="frame" x="166" y="686" width="82" height="30"/>
+                                <state key="normal" title="Back to title">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="NBt-oT-haT" kind="show" id="LAY-7O-cpC"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RQH-28-udC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-272" y="307"/>
+        </scene>
+        <!--View Controller-->
         <scene sceneID="DdR-X3-EjP">
             <objects>
                 <viewController id="NBt-oT-haT" sceneMemberID="viewController">
@@ -45,6 +78,17 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sLN-n2-0Au">
+                                <rect key="frame" x="16" y="651" width="98" height="30"/>
+                                <color key="backgroundColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="Basic strategy">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="cyc-MA-DhJ" kind="show" id="shg-Ch-qyy"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -372,11 +416,12 @@
     </scenes>
     <resources>
         <image name="Dealer.png" width="358" height="500"/>
+        <image name="blackjack-strategy-card2.gif" width="432" height="611"/>
         <image name="bombStartButton.png" width="190" height="45"/>
         <image name="cardFuchi.png" width="50" height="70"/>
         <image name="z02.png" width="200" height="300"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="TnO-6E-Unk"/>
+        <segue reference="LAY-7O-cpC"/>
     </inferredMetricsTieBreakers>
 </document>

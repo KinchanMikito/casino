@@ -13,6 +13,7 @@
 		EA026DBE1AC23F30006D0B29 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA026DBD1AC23F30006D0B29 /* Images.xcassets */; };
 		EA026DC11AC23F30006D0B29 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA026DBF1AC23F30006D0B29 /* LaunchScreen.xib */; };
 		EA026DCD1AC23F30006D0B29 /* casinoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA026DCC1AC23F30006D0B29 /* casinoTests.swift */; };
+		EA1DE6F61ADD3F6700C732C0 /* blackjack-strategy-card2.gif in Resources */ = {isa = PBXBuildFile; fileRef = EA1DE6F51ADD3F6700C732C0 /* blackjack-strategy-card2.gif */; };
 		EAD015831AC45F3300B616BD /* c1.png in Resources */ = {isa = PBXBuildFile; fileRef = EAD0154A1AC45F3300B616BD /* c1.png */; };
 		EAD015841AC45F3300B616BD /* c10.png in Resources */ = {isa = PBXBuildFile; fileRef = EAD0154B1AC45F3300B616BD /* c10.png */; };
 		EAD015851AC45F3300B616BD /* c11.png in Resources */ = {isa = PBXBuildFile; fileRef = EAD0154C1AC45F3300B616BD /* c11.png */; };
@@ -97,6 +98,7 @@
 		EA026DC61AC23F30006D0B29 /* casinoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = casinoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA026DCB1AC23F30006D0B29 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EA026DCC1AC23F30006D0B29 /* casinoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = casinoTests.swift; sourceTree = "<group>"; };
+		EA1DE6F51ADD3F6700C732C0 /* blackjack-strategy-card2.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "blackjack-strategy-card2.gif"; sourceTree = "<group>"; };
 		EAD0154A1AC45F3300B616BD /* c1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = c1.png; sourceTree = "<group>"; };
 		EAD0154B1AC45F3300B616BD /* c10.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = c10.png; sourceTree = "<group>"; };
 		EAD0154C1AC45F3300B616BD /* c11.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = c11.png; sourceTree = "<group>"; };
@@ -207,6 +209,7 @@
 				EAE4C9451AC6A67B0070B59E /* Dealer.png */,
 				EAE4C93F1AC5395F0070B59E /* cardFuchi.png */,
 				EAE4C9431AC63FC30070B59E /* dsd_2481a_1.jpg */,
+				EA1DE6F51ADD3F6700C732C0 /* blackjack-strategy-card2.gif */,
 				EA026DBD1AC23F30006D0B29 /* Images.xcassets */,
 				EA026DBF1AC23F30006D0B29 /* LaunchScreen.xib */,
 				EA026DB41AC23F30006D0B29 /* Supporting Files */,
@@ -436,6 +439,7 @@
 				EAD0158A1AC45F3300B616BD /* c4.png in Resources */,
 				EAD015851AC45F3300B616BD /* c11.png in Resources */,
 				EAD015B11AC45F3300B616BD /* s4.png in Resources */,
+				EA1DE6F61ADD3F6700C732C0 /* blackjack-strategy-card2.gif in Resources */,
 				EAD015911AC45F3300B616BD /* d10.png in Resources */,
 				EAD015B81AC45F3300B616BD /* x01.png in Resources */,
 				EAD015961AC45F3300B616BD /* d3.png in Resources */,
