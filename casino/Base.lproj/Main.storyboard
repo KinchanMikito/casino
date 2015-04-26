@@ -147,7 +147,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="勝つる" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TI6-9k-MqS">
-                                <rect key="frame" x="36" y="402" width="343" height="36"/>
+                                <rect key="frame" x="36" y="394" width="343" height="36"/>
                                 <fontDescription key="fontDescription" name="HiraKakuProN-W3" family="Hiragino Kaku Gothic ProN" pointSize="25"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
@@ -159,7 +159,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ytm-IS-WJx">
-                                <rect key="frame" x="243" y="445" width="140" height="60"/>
+                                <rect key="frame" x="243" y="525" width="140" height="60"/>
                                 <color key="backgroundColor" red="0.34763932959999999" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <state key="normal" title="STAND">
@@ -183,7 +183,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CK4-UP-vzC">
-                                <rect key="frame" x="128" y="516" width="159" height="58"/>
+                                <rect key="frame" x="128" y="594" width="159" height="58"/>
                                 <color key="backgroundColor" red="0.34763932959999999" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="DOUBLE DOWN">
@@ -194,20 +194,9 @@
                                     <action selector="tapDoubleDown" destination="vXZ-lx-hvc" eventType="touchUpInside" id="AFn-qw-0nq"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ncI-gZ-2Y5">
-                                <rect key="frame" x="145" y="656" width="125" height="54"/>
-                                <fontDescription key="fontDescription" name="HiraKakuProN-W3" family="Hiragino Kaku Gothic ProN" pointSize="23"/>
-                                <state key="normal" title="ベット完了">
-                                    <color key="titleColor" red="1" green="0.97780936830063125" blue="0.032113350155972942" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="doneBet" destination="vXZ-lx-hvc" eventType="touchUpInside" id="McX-PM-apm"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8h5-Qe-gFX">
-                                <rect key="frame" x="286" y="650" width="93" height="55.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <rect key="frame" x="223" y="524" width="160" height="70"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
                                 <state key="normal" title="-5M">
                                     <color key="titleColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -217,13 +206,13 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0M" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WQD-Vl-Qes">
-                                <rect key="frame" x="101" y="582" width="213" height="49"/>
+                                <rect key="frame" x="101" y="430" width="213" height="49"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="45"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PzA-XL-7HK">
-                                <rect key="frame" x="44" y="627" width="327" height="26"/>
+                                <rect key="frame" x="44" y="475" width="327" height="26"/>
                                 <fontDescription key="fontDescription" name="HiraKakuProN-W3" family="Hiragino Kaku Gothic ProN" pointSize="23"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
@@ -265,7 +254,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZpQ-6v-VoA">
-                                <rect key="frame" x="30" y="445" width="140" height="60"/>
+                                <rect key="frame" x="30" y="526" width="140" height="60"/>
                                 <color key="backgroundColor" red="0.34763932959999999" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="29"/>
                                 <state key="normal" title="H I T">
@@ -288,14 +277,36 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rua-yS-rmH">
-                                <rect key="frame" x="36" y="651" width="98" height="52.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <rect key="frame" x="30" y="524" width="160" height="69.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
                                 <state key="normal" title="+5M">
                                     <color key="titleColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <action selector="tapBet" destination="vXZ-lx-hvc" eventType="touchUpInside" id="kIC-dQ-BqI"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gCW-mS-3u3">
+                                <rect key="frame" x="131" y="593" width="152" height="41"/>
+                                <fontDescription key="fontDescription" name="HiraKakuProN-W3" family="Hiragino Kaku Gothic ProN" pointSize="30"/>
+                                <state key="normal" title="全賭け">
+                                    <color key="titleColor" red="1" green="0.96896024465607644" blue="0.014127910818697798" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="tapZenkake" destination="vXZ-lx-hvc" eventType="touchUpInside" id="EIo-gp-LYn"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ncI-gZ-2Y5">
+                                <rect key="frame" x="145" y="642" width="125" height="54"/>
+                                <fontDescription key="fontDescription" name="HiraKakuProN-W3" family="Hiragino Kaku Gothic ProN" pointSize="23"/>
+                                <state key="normal" title="ベット完了">
+                                    <color key="titleColor" red="1" green="0.97780936830063125" blue="0.032113350155972942" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="doneBet" destination="vXZ-lx-hvc" eventType="touchUpInside" id="McX-PM-apm"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -313,6 +324,8 @@
                         <outlet property="dealersHistory5" destination="6rM-Eu-xnU" id="3u2-5L-Gwc"/>
                         <outlet property="dealersLabel" destination="Qge-PQ-qCb" id="KyM-dR-778"/>
                         <outlet property="done" destination="ncI-gZ-2Y5" id="jv1-Gu-Gsg"/>
+                        <outlet property="doubleDown" destination="CK4-UP-vzC" id="Xpk-wd-UNN"/>
+                        <outlet property="hit" destination="ZpQ-6v-VoA" id="Uea-ZD-iHT"/>
                         <outlet property="mokkaiButon" destination="u3m-Xk-dEX" id="1mM-Wg-A0n"/>
                         <outlet property="myHistory1" destination="XE2-OA-Ned" id="AkK-h2-LHc"/>
                         <outlet property="myHistory2" destination="Zl1-Fx-NVs" id="myc-hK-EjE"/>
@@ -322,6 +335,8 @@
                         <outlet property="myLabel" destination="O9L-Qh-2Rn" id="NW5-5a-LOm"/>
                         <outlet property="myMoneyLabel" destination="PzA-XL-7HK" id="rh8-US-HW9"/>
                         <outlet property="resultLabel" destination="TI6-9k-MqS" id="IIQ-lt-8en"/>
+                        <outlet property="stand" destination="Ytm-IS-WJx" id="BM3-BF-roN"/>
+                        <outlet property="zenkake" destination="gCW-mS-3u3" id="XHE-Fa-7tk"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
@@ -422,6 +437,6 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="scQ-pX-5ga"/>
-        <segue reference="uRf-ME-Zf1"/>
+        <segue reference="TnO-6E-Unk"/>
     </inferredMetricsTieBreakers>
 </document>

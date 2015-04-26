@@ -53,6 +53,10 @@ class ViewController: UIViewController {
     @IBOutlet var betPlus:UIButton!
     @IBOutlet var betMinus:UIButton!
     @IBOutlet var done:UIButton!
+    @IBOutlet var hit:UIButton!
+    @IBOutlet var stand:UIButton!
+    @IBOutlet var doubleDown:UIButton!
+    @IBOutlet var zenkake:UIButton!
     
     var betDone:Bool = false
     
@@ -73,6 +77,10 @@ class ViewController: UIViewController {
         bettingMoneyLabel.text = String("\(bettingMoney)M")
         
         [self .cardsDefault()]
+        
+        hit.hidden = true
+        stand.hidden = true
+        doubleDown.hidden = true
         
     }
 
@@ -625,6 +633,11 @@ class ViewController: UIViewController {
         betPlus.hidden = false
         betMinus.hidden = false
         done.hidden = false
+        zenkake.hidden = false
+        
+        hit.hidden = true
+        stand.hidden = true
+        doubleDown.hidden = true
         
         AceElevenPlayer = false
         AceElevenDealer = false
@@ -642,6 +655,21 @@ class ViewController: UIViewController {
             bettingMoneyLabel.text = String("\(bettingMoney)M")
 
             myMoney -= 5
+            
+            myMoneyLabel.text = String("所持金:\(myMoney)M")
+            
+        }
+        
+    }
+    @IBAction func tapZenkake(){
+        
+        if betable == true{
+            
+            bettingMoney += myMoney
+            
+            bettingMoneyLabel.text = String("\(bettingMoney)M")
+            
+            myMoney = 0
             
             myMoneyLabel.text = String("所持金:\(myMoney)M")
             
@@ -671,6 +699,11 @@ class ViewController: UIViewController {
             betPlus.hidden = true
             betMinus.hidden = true
             done.hidden = true
+            zenkake.hidden = true
+            
+            hit.hidden = false
+            stand.hidden = false
+            doubleDown.hidden = false
             
             [self .dealerDefault()]
             [self .playerDefault()]
