@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14C1514" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="NBt-oT-haT">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -49,11 +50,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Dealer.png" translatesAutoresizingMaskIntoConstraints="NO" id="PVS-aL-sWy">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Dealer.png" translatesAutoresizingMaskIntoConstraints="NO" id="PVS-aL-sWy">
                                 <rect key="frame" x="-1" y="41" width="415" height="640"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YeW-FB-ixs">
-                                <rect key="frame" x="86" y="580" width="242" height="63"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YeW-FB-ixs">
+                                <rect key="frame" x="86" y="598" width="242" height="45"/>
                                 <state key="normal" image="bombStartButton.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -61,7 +62,13 @@
                                     <segue destination="vXZ-lx-hvc" kind="show" id="nDt-tY-qLL"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rLA-i6-AzK">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Casino Mikito" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wcg-KR-XrK">
+                                <rect key="frame" x="16" y="41" width="382" height="36.5"/>
+                                <fontDescription key="fontDescription" name="Palatino-Roman" family="Palatino" pointSize="33"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rLA-i6-AzK">
                                 <rect key="frame" x="310" y="651" width="88" height="30"/>
                                 <color key="backgroundColor" red="0.5951525099734043" green="0.5951525099734043" blue="0.5951525099734043" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="How to play">
@@ -72,14 +79,26 @@
                                     <segue destination="zSz-vh-N15" kind="show" id="6kI-af-c0O"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Casino Mikito" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wcg-KR-XrK">
-                                <rect key="frame" x="16" y="28" width="382" height="51"/>
-                                <fontDescription key="fontDescription" name="Palatino-Roman" family="Palatino" pointSize="33"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="PVS-aL-sWy" secondAttribute="trailing" constant="-16" id="572-tT-yRY"/>
+                            <constraint firstItem="PVS-aL-sWy" firstAttribute="top" secondItem="OJ3-s7-2u7" secondAttribute="bottom" constant="21" id="9Py-mn-JzW"/>
+                            <constraint firstItem="PVS-aL-sWy" firstAttribute="leading" secondItem="d5b-ui-Jof" secondAttribute="leadingMargin" constant="-17" id="Hoc-FM-uJA"/>
+                            <constraint firstItem="rLA-i6-AzK" firstAttribute="trailing" secondItem="d5b-ui-Jof" secondAttribute="trailingMargin" id="KtG-DN-CmY"/>
+                            <constraint firstItem="rLA-i6-AzK" firstAttribute="top" secondItem="YeW-FB-ixs" secondAttribute="bottom" constant="8" id="NGC-pn-DUZ"/>
+                            <constraint firstItem="jX6-WU-NXh" firstAttribute="top" secondItem="rLA-i6-AzK" secondAttribute="bottom" constant="55" id="RAd-EQ-L7J"/>
+                            <constraint firstItem="wcg-KR-XrK" firstAttribute="trailing" secondItem="d5b-ui-Jof" secondAttribute="trailingMargin" id="T9f-Ck-tOB"/>
+                            <constraint firstItem="YeW-FB-ixs" firstAttribute="leading" secondItem="d5b-ui-Jof" secondAttribute="leadingMargin" constant="70" id="TK3-rN-oOV"/>
+                            <constraint firstItem="wcg-KR-XrK" firstAttribute="top" secondItem="OJ3-s7-2u7" secondAttribute="bottom" constant="21" id="e66-K0-0nq"/>
+                            <constraint firstItem="rLA-i6-AzK" firstAttribute="leading" secondItem="d5b-ui-Jof" secondAttribute="leadingMargin" constant="294" id="fe0-f3-ctF"/>
+                            <constraint firstItem="rLA-i6-AzK" firstAttribute="trailing" secondItem="d5b-ui-Jof" secondAttribute="trailingMargin" id="gke-nZ-ndV"/>
+                            <constraint firstItem="wcg-KR-XrK" firstAttribute="leading" secondItem="d5b-ui-Jof" secondAttribute="leadingMargin" id="nmC-eI-ZH4"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="YeW-FB-ixs" secondAttribute="trailing" constant="70" id="srL-2F-95S"/>
+                            <constraint firstItem="rLA-i6-AzK" firstAttribute="trailing" secondItem="d5b-ui-Jof" secondAttribute="trailingMargin" id="uBU-oa-X6O"/>
+                            <constraint firstItem="jX6-WU-NXh" firstAttribute="top" secondItem="PVS-aL-sWy" secondAttribute="bottom" constant="55" id="xOQ-8d-ywF"/>
+                            <constraint firstItem="jX6-WU-NXh" firstAttribute="top" secondItem="rLA-i6-AzK" secondAttribute="bottom" constant="55" id="yto-Ji-omk"/>
+                        </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
                 </viewController>
@@ -436,7 +455,7 @@
         <image name="z02.png" width="200" height="300"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="scQ-pX-5ga"/>
         <segue reference="TnO-6E-Unk"/>
+        <segue reference="6kI-af-c0O"/>
     </inferredMetricsTieBreakers>
 </document>
